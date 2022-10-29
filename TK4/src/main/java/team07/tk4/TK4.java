@@ -2,6 +2,7 @@
 package team07.tk4;
 
 import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  *
@@ -30,19 +31,25 @@ public class TK4 {
                    randomData();
                    break;
                case 2:
+                   rand();
                    BubbleSort();
                    break;
                case 3:
+                   rand();
                    selectionSort();
                    break;
                case 4:
+                   rand();
                    BubbleSort(false);
                    break;
                case 5:
+                   rand();
                    selectionSort(false);
                    break;
-               case 6:
-                   break;
+                case 6:
+	           System.exit(0);
+	               default:
+	           System.out.println("Invalid Input");
            }
        }
    }
@@ -56,6 +63,14 @@ public class TK4 {
        }
        printData();
    }
+  static void rand () {
+		   int iMin = ThreadLocalRandom.current().nextInt(0, 65336);
+		   int iMax = ThreadLocalRandom.current().nextInt(0, 65336);
+		   
+		   for (int i=1;i<=5;i++){
+	           lstData[i-1]=(int)(iMin + (int) (Math.random() * (iMax -iMin + 1)));
+	       }
+	   }
    static void BubbleSort(){
        BubbleSort(true);
    }
