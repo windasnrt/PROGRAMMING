@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 /**
  *
- * @author Winda Lorenza
+ * @author Winda Lorenza 
  */
 public class TK4 {
 
@@ -31,19 +31,27 @@ public class TK4 {
                    randomData();
                    break;
                case 2:
-                   rand();
+                    if((lstData[0] == 0) && (lstData[1] == 0) && (lstData[2] == 0) && (lstData[3] == 0) && (lstData[4] == 0)) {
+		            	   rand();
+	            	   }
                    BubbleSort();
                    break;
                case 3:
-                   rand();
+                    if((lstData[0] == 0) && (lstData[1] == 0) && (lstData[2] == 0) && (lstData[3] == 0) && (lstData[4] == 0)) {
+		            	   rand();
+	            	   }
                    selectionSort();
                    break;
                case 4:
-                   rand();
+                    if((lstData[0] == 0) && (lstData[1] == 0) && (lstData[2] == 0) && (lstData[3] == 0) && (lstData[4] == 0)) {
+		            	   rand();
+	            	   }
                    BubbleSort(false);
                    break;
                case 5:
-                   rand();
+                    if((lstData[0] == 0) && (lstData[1] == 0) && (lstData[2] == 0) && (lstData[3] == 0) && (lstData[4] == 0)) {
+		            	   rand();
+	            	   }
                    selectionSort(false);
                    break;
                 case 6:
